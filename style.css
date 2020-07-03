@@ -1,0 +1,281 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+header{
+  height:100px;
+  width:100%;
+  background-image: linear-gradient(to right, rgb(102, 97, 167), rgb(137, 123, 218));
+  
+}
+#logobox{
+  width: 50%;
+  height: 100%;
+  float: right;
+  background-color: rgb(241, 228, 228);
+}
+#h1header{
+  float: left;
+  line-height: 100px;
+  padding: 0 15px;
+  color: blue;
+}
+#logo{
+  height: 100%;
+  border-radius: 50%;
+  
+}
+
+nav{
+  width: 50%;
+  text-align: center;
+}
+nav a{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  display: inline-block;
+}
+nav li{
+  display: inline-block;
+  line-height:100px;
+  width: 130px;
+  text-align: center;
+  
+}
+nav li a{
+  display: inline-block;
+  color: white;
+  text-align: center;
+ 
+}
+#dropbutton{
+  background-color: rgb(241, 228, 228);
+  position: absolute;
+  z-index: 1;
+  display: none;
+  width: 130px;
+}
+#dropbutton a{
+  color:blue;
+  display:block;
+}
+#dropdown:hover #dropbutton{
+  display: block;
+}
+nav li a:hover, #dropbutton a:hover{
+  background-color: rgb(241, 228, 228);
+  color: blue;
+  height: 100%;
+  width: 100%;
+}
+main{
+  width: 100%;
+  height: 450px;
+  background-color: rgb(218, 229, 240);
+  border-top: 3px solid rgb(151, 136, 218);
+  animation-name:changeBackground;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+@keyframes changeBackground{
+  0%{
+      background-color: rgb(237, 236, 241);
+  }
+  50%{
+      background-color:rgb(215, 233, 250);
+
+  }
+  100%{
+      background-color: rgb(242, 243, 245)te;
+
+  }
+}
+main h1{
+  color: blue;
+  text-align: center;
+}
+
+main a{
+  text-align: center;
+  color: blue;
+  margin-left: 20%;
+}
+
+aside{
+  width: 30%;
+  height: 100%;
+  background-color: rgb(68, 138, 212);
+  text-align: center;
+  float: left;
+}
+aside img{
+  width: 98%;
+  border-radius: 30px;
+  padding-top: 5px;
+ 
+}
+#h1aside{
+  color: white;
+  padding-top: 15px;
+}
+#h3aside{
+  color: white;
+  padding-top: 25px;
+  margin: 5px ;
+}
+#article{
+  float: right;
+  width: 70%;
+  height: 450px;
+  position: relative;
+}
+
+#article a{
+  margin: 150px;
+}
+#box{
+  position: absolute;
+  width: 70%;
+  height: 450px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+#box h1{
+  font-size: xx-large;
+  
+}
+#box p{
+  padding-top: 10px;
+  color: blue;
+  font-size: x-large;
+  margin: 10px 10px;
+  text-align: justify   ;
+}
+#box a{
+  text-align: center;
+}
+#contact-box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  
+}
+#contact-box img{
+  width: 50px;
+  border-bottom: 2px double red;
+  
+}
+#contact-box img:hover{
+  width: 55px;
+  border-bottom: 2px solid;
+}
+footer{
+  width: 100%;
+  height: 100px;
+}
+fieldset{
+  height: 100px;
+  line-height: 25px;
+}
+
+
+@media only screen and (max-width:1297px){
+  #logobox{
+    width: 65%;
+  } 
+    
+}
+
+@media only screen and  (max-width:1000px){
+  header,main{
+    height: auto;
+  }
+  
+  #logobox{
+    width: 100%;
+    text-align: center;
+
+  } 
+   #h1header,#logo{
+    float: none;
+    
+  } 
+  nav{
+    width: 100%;
+  }
+  aside{
+    width: 100%;
+    
+  }
+  #box h1{
+    font-size: 22px;
+  }
+  #box p{
+    font-size: 18px;
+  }
+  #box a{
+    font-size: 15px;
+    margin-left: 80px;
+    
+  }
+  #box{
+    
+    height: auto;
+    width: 100%;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+       
+  }
+  footer{
+    height: auto;
+    width: 100%;
+    
+  }
+  fieldset{
+    float: none;
+    height: auto;
+    width: 100%;
+  }
+  article{
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+}
+@media only screen and  (max-width:500px){
+nav li{
+  
+  display: block;
+  width: 100%;
+}
+
+#logo{
+  width: 70%;
+}
+
+
+footer{
+  width: 100%;
+  height: 150px;
+  background-color:  rgb(241, 228, 228);
+  
+}
+legend{
+  color: blue
+}
+fieldset  a{
+  color: blue
+}
+fieldset p{
+  color:blue
+}
+fieldset{
+  height: 150px;
+  line-height: 30px;
+  padding-left: 5px;
+}
+}
